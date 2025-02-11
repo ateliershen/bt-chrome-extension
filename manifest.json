@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "BT Helper",
+  "version": "1.0.0",
+  "description": "Compose summaries, social media previews, and push notifications effortlessly.",
+  "permissions": [
+    "activeTab",
+    "sidePanel",
+    "clipboardWrite"
+  ],
+  "action": {
+    "default_title": "BT Helper"
+  },
+  "side_panel": {
+    "default_path": "src/sidepanel/index.html"
+  },
+  "background": {
+    "service_worker": "dist/background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["dist/content.js"]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon_16.png",
+    "32": "icons/icon_32.png",
+    "48": "icons/icon_48.png",
+    "128": "icons/icon_128.png"
+  }
+}
