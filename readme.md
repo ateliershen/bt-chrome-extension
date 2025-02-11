@@ -1,8 +1,10 @@
 ## ⚠️ How to Add API Key
 **Step 1:**
 Visit `https://console.groq.com/keys` and create a free account. Subsequently, generate the API Key.
+
 **Step 2:**
 Locate the file `src/background/background.js` and navigate to line 8. Replace the existing API Key with your newly generated one.
+
 **Important Notice:** Typically, it is advisable to refrain from saving the KPI key directly in the file. However, for the purpose of expediting the process, we have made a slight compromise in terms of security. While this deviation should not pose a significant risk if you are the sole user of this extension, please exercise caution when sharing this tool with others, particularly if you are utilizing a paid API key.
 
 ## How to Install
